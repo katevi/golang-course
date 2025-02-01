@@ -1,2 +1,5 @@
 # golang-course
-This is a repository for Golang course materials.
+
+В этом репозитории хранятся материалы к курсу по Golang.
+
+
