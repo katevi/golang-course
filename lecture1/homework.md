@@ -22,10 +22,11 @@
 
 ## II. Задачи
 
-1. Про конкатенацию слайса: https://leetcode.com/problems/concatenation-of-array/description/ 
-2. Про пары чисел в слайсе: https://leetcode.com/problems/number-of-good-pairs/description/ 
-3. Про консистентные строчки: https://leetcode.com/problems/count-the-number-of-consistent-strings/description/
-4. Реализовать свой тип ошибки. Написать программу, в которой создается буферизованный канал ошибок `error`, положить в него созданную ошибку. Прочитать ошибку из канала, напечатать.
+1. Про конкатенацию слайса: https://leetcode.com/problems/concatenation-of-array/description/ (есть красивое и короткое решение) .
+2. Про пары чисел в слайсе: https://leetcode.com/problems/number-of-good-pairs/description/ .
+3. Реализовать свой тип ошибки. Написать программу, в которой создается буферизованный канал ошибок `error`, положить в него созданную ошибку. Прочитать ошибку из канала, напечатать.
+4. Реализовать структуру данных Set (множество неповторяющихся элементов) на основе стандартной мапы (map).
+5. (*) Про консистентные строчки: https://leetcode.com/problems/count-the-number-of-consistent-strings/description/ .
 
 ## III. Формат сдачи
 
