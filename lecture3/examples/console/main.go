@@ -7,6 +7,8 @@ import (
 	"strings"
 )
 
+// run from the root of the repository
+// go run ./lecture3/examples/console/main.go
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	lineCount := 0

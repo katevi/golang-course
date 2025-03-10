@@ -6,6 +6,8 @@ import (
 	"path/filepath"
 )
 
+// run from the root of the repository
+// go run ./lecture3/examples/traverse/main.go ./lecture3/examples/traverse/testdir
 func main() {
 	// Check if a directory path is provided
 	if len(os.Args) != 2 {
