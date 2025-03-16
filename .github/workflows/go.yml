@@ -5,24 +5,36 @@ name: Go
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.24'
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: "1.24"
 
-    - name: Build Lecture 1
-      run: | 
-        go build -v ./lecture1/examples/maps/maps.go
-        go build -v ./lecture1/examples/slices/slices.go
-        go build -v ./lecture1/examples/phoneBook/phoneBook.go
+      - name: Build Lecture 1
+        run: |
+          for dir in ./maps ./slices ./phoneBook; do
+            echo "Building $dir"
+            cd $dir
+            go build -v main.go
+            cd -
+          done
+        working-directory: ./lecture1/examples
+      - name: Build Lecture 3
+        run: |
+          for dir in ./console ./file ./traverse; do
+            echo "Building $dir"
+            cd $dir
+            go build ./...
+          cd -
+          done
+        working-directory: ./lecture3/examples
