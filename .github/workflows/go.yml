@@ -38,3 +38,13 @@ jobs:
           cd -
           done
         working-directory: ./lecture3/examples
+      - name: Build Lecture 4
+        run: |
+          for dir in ./logger ./coordinate; do
+            echo "Building $dir"
+            cd $dir
+            go build ./...
+            go test ./...
+          cd -
+          done
+        working-directory: ./lecture4/examples
