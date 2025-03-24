@@ -1,0 +1,8 @@
+=== {{.Speciality}} ===
+
+{{range .Students}}
+Student: {{.Name}} {{.Surname}}
+Group: {{.Group}}
+Subjects: {{if .Subjects}}{{range .Subjects}}{{.}} {{end}}{{else}}No subjects enrolled{{end}}
+{{if eq .Group 101}} (This student is in group 101){{end}}
+{{end}}
