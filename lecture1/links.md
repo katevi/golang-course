@@ -5,7 +5,7 @@
 1. Официальная страница языка https://go.dev/doc/
 1. Go Tour (базовое вступление в Go): https://go.dev/tour/welcome/1
 1. Effective Go (более продвинутое вступление в Go):
-   https://golangci-lint.run/
+   https://go.dev/doc/effective_go
 1. Документация на инструменты для сборки
    (go run, go build, go test): https://pkg.go.dev/cmd/go
 1. Еще примеры базовых конструкций в Go: https://gobyexample.com/
