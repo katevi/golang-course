@@ -1,0 +1,6 @@
+server:
+  port: "4444" # Overrides default 8080
+  host: "localhost"
+
+logging:
+  level: "debug" # Overrides default "info"

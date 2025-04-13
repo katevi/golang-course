@@ -48,3 +48,23 @@ jobs:
           cd -
           done
         working-directory: ./lecture4/examples
+      - name: Build Lecture 7
+        run: |
+          for dir in ./client ./fileserver ./gin; do
+            echo "Building $dir"
+            cd $dir
+            go build ./...
+            go test ./...
+          cd -
+          done
+        working-directory: ./lecture7/examples
+      - name: Build Lecture 8
+        run: |
+          for dir in ./cobra ./viper; do
+            echo "Building $dir"
+            cd $dir
+            go build ./...
+            go test ./...
+          cd -
+          done
+        working-directory: ./lecture8/examples
